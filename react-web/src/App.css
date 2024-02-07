@@ -1,10 +1,7 @@
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,30 +34,100 @@
   }
 }
 
-.kvackman-text {
-  margin-left: -400px; /* Adjust the top margin as needed */
-  color: rgb(47, 0, 255); /* Change text color if necessary */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-
 
 .App {
   text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the height of the App container to 100% of the viewport height */
+  background-image: url('./x_wing.jpeg'); /* Add the background image URL here */
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 
+
+
+h2, h1 {
+  /* Set white text color */
+  color: #FF642B;
+  /* Create black outline using text-shadow */
+  text-shadow: -1px -1px 0 white,  
+                1px -1px 0 white,
+               -1px  1px 0 white,
+                1px  1px 0 white;
+}
+
+/* h1 settings */
+
+@font-face {
+  font-family: 'EuclidFraktur'; /* Give your font a name */
+  src: url('./EuclidFraktur.ttf') format('truetype'); /* Specify the font file */
+}
+
+@font-face {
+  font-family: 'Garamond'; /* Give your font a name */
+  src: url('./EBGaramond_Bold.ttf') format('truetype'); /* Specify the font file */
+}
+
+h1::first-letter {
+  font-family: 'EuclidFraktur', sans-serif; /* Use your desired font for the first letter */
+  font-size: 200%; /* Adjust the font size as needed */
+}
+
+h1 {
+  font-family: 'Garamond', Arial, sans-serif; /* Use your desired font for the rest of the text */
+  font-size: 300%;
+  margin-bottom: 5px;
+  margin-top: -10px;
+  line-height: 0.5;
+}
+
+@font-face {
+  font-family: 'Roboto'; /* Give your font a name */
+  src: url('./RobotoMedium.ttf') format('truetype'); /* Specify the font file */
+}
+
+p {
+  color: white; /* Set the text color to white */
+  
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: -20px
+}
+
+
 .games-container {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
+  overflow-x: auto; 
+}
+
+@media (min-width: 800px) {
+  .games-container {
+    flex-wrap: nowrap; /* Prevent wrapping when screen is wider than 800px */
+  }
 }
 
 .Game {
-  flex-grow: 1;
-  margin: 0.5%;
-  max-width: 30%; /* Adjust as necessary */
+  flex-shrink: 0; /* Prevent items from shrinking */
+  margin: 0 5px; /* Adjust margins as needed */
+  width: 20%; /* Adjust as necessary */
+  max-width: 200px;
 }
 
 @media (max-width: 768px) {
   .Game {
-    max-width: 45%; /* Adjust as necessary */
+    width: 45%; /* Adjust as necessary */
   }
 }

@@ -1,7 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import logo from './logo.svg';
 import kvackman from './Kvackman.png';
 import fnollsflykt from './fnolls_flykt.png';
 import codenames from './codenames.png';
@@ -21,7 +19,7 @@ function Game({ link, name, img_name}) {
       style={{ display: 'inline-block', margin: '0.5%' }}
     >
       <h2>{name}</h2>
-      <img src={img_name} width={150} height={150} alt='Här är en bild på spelet'/>
+      <img src={img_name} width={140} height={140} alt='Här är en bild på spelet'/>
       
     </a>
   );
@@ -30,10 +28,11 @@ function Game({ link, name, img_name}) {
 
 function App() {
   return (
+    
     <div className="App">
-      <h1>Fysiksektionens arcade-sida!</h1>
+      <h1>Fysiksektionen Arcade!</h1>
       <p>
-        Hej och Välkomna samtliga Fysematiker till denna plats. Här hittar ni Fysiksektionens legendariska spel!
+        Hej och Välkomna samtliga Fysimatiker till denna plats. Här hittar ni Fysiksektionens legendariska spel!
       </p>
       <div className="games-container">
         <Game link="https://f.kth.se/arcade/kvackman" name="Kvackman" img_name={kvackman}/>
