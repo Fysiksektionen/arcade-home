@@ -5,6 +5,7 @@ import fnollsflykt from './fnolls_flykt.png';
 import codenames from './codenames.png';
 import campus_d from './campus_defence.png';
 import te1ris from './te1ris.png';
+import nollejump from './nollejump.png';
 import './App.css';
 
 
@@ -40,6 +41,7 @@ function App() {
         <Game link="https://f.kth.se/arcade/codenames/" name="Codenames" img_name={codenames}/>
         <Game link="https://f.kth.se/arcade/campusdefence" name="Campus Defence" img_name={campus_d}/>
         <Game link="https://pyro-cryo.github.io/Te1ris/" name="Te1ris" img_name={te1ris}/>
+        <Game link="https://pyro-cryo.github.io/nollejump/" name="Nollejump" img_name={nollejump}/>
         {/* Lägg till fler spel här */}
       </div>
     </div>
