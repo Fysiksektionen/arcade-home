@@ -2,7 +2,6 @@ import React from 'react';
 
 import kvackman from './Kvackman.png';
 import fnollsflykt from './fnolls_flykt.png';
-import codenames from './codenames.png';
 import campus_d from './campus_defence.png';
 import te1ris from './te1ris.png';
 import nollejump from './nollejump.png';
