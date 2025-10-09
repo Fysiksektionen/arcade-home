@@ -40,7 +40,7 @@ function App() {
         <Game link="https://f.kth.se/arcade/kvackman" name="Kvackman" img_name={kvackman}/>
         <Game link="https://f.kth.se/arcade/fnollsflykt/" name="Fnolls Flykt" img_name={fnollsflykt}/>
         <Game link="https://pyro-cryo.github.io/campusdefence/" name="Campus Defence" img_name={campus_d}/>
-        <Game link="https://pyro-cryo.github.io/TE1ris/" name="Te1ris" img_name={te1ris}/>
+        <Game link="https://pyro-cryo.github.io/Te1ris/" name="TE1ris" img_name={te1ris}/>
         <Game link="https://pyro-cryo.github.io/nollejump/" name="nØllejump" img_name={nollejump}/>
         <Game link="https://default-username-852.github.io/nolle-surfers/" name="nØlle-surfers" img_name={nollesurfers}/>
         <Game link="https://f.kth.se/arcade/gerry-runner" name="Gerry Runner" img_name={gerryrunner}/>
