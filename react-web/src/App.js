@@ -6,7 +6,7 @@ import campus_d from './campus_defence.png';
 import te1ris from './te1ris.png';
 import nollejump from './nollejump.png';
 import nollesurfers from './nolle-surfers.png';
-import gerryrunner from './gerry-runner.png';
+import giraffeBalloonEscape from './giraffe-balloon-escape.png';
 import './App.css';
 
 
@@ -43,7 +43,7 @@ function App() {
         <Game link="https://pyro-cryo.github.io/Te1ris/" name="TE1ris" img_name={te1ris}/>
         <Game link="https://pyro-cryo.github.io/nollejump/" name="nØllejump" img_name={nollejump}/>
         <Game link="https://default-username-852.github.io/nolle-surfers/" name="nØlle-surfers" img_name={nollesurfers}/>
-        <Game link="https://f.kth.se/arcade/gerry-runner" name="Gerry Runner" img_name={gerryrunner}/>
+        <Game link="https://f.kth.se/arcade/giraffe-balloon-escape" name="Giraffe Balloon Escape" img_name={giraffeBalloonEscape}/>
         {/* Lägg till fler spel här */}
       </div>
     </div>
